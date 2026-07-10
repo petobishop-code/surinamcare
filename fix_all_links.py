@@ -1,44 +1,60 @@
 import glob
-import re
+import os
 
 files = glob.glob("*.html")
 
-regions = {
-    "seongsan": "anyang",
-    "성산구": "안양",
-    "changwon": "anyang",
-    "창원": "안양",
-    "masan": "anyang",
-    "마산": "안양",
-    "gimhae": "anyang",
-    "김해": "안양",
-}
-
 for file in files:
+
+    filename = os.path.splitext(file)[0]
+
+    if "-" not in filename:
+        continue
+
+    region = filename.rsplit("-",1)[0]
+
     with open(file, "r", encoding="utf-8") as f:
         text = f.read()
 
     original = text
 
-    for old, new in regions.items():
-        text = text.replace(old, new)
 
-    # 파일명 링크 수정
-    text = text.replace("anyang-drain.html", "anyang-drain.html")
-    text = text.replace("anyang-sink.html", "anyang-sink.html")
-    text = text.replace("anyang-toilet.html", "anyang-toilet.html")
-
-    # 잘못된 canonical 자동 수정
-    text = re.sub(
-        r'<link rel="canonical" href="[^"]+">',
-        lambda m: f'<link rel="canonical" href="https://www.surinamcare.kr/{file}">',
-        text
+    text = text.replace(
+        "seongsan-sink.html",
+        f"{region}-sink.html"
     )
 
+    text = text.replace(
+        "seongsan-drain.html",
+        f"{region}-drain.html"
+    )
+
+    text = text.replace(
+        "seongsan-toilet.html",
+        f"{region}-toilet.html"
+    )
+
+
+    text = text.replace(
+        "https://surinamcare.kr/seongsan-sink.html",
+        f"https://surinamcare.kr/{region}-sink.html"
+    )
+
+    text = text.replace(
+        "https://surinamcare.kr/seongsan-drain.html",
+        f"https://surinamcare.kr/{region}-drain.html"
+    )
+
+    text = text.replace(
+        "https://surinamcare.kr/seongsan-toilet.html",
+        f"https://surinamcare.kr/{region}-toilet.html"
+    )
+
+
     if text != original:
-        with open(file, "w", encoding="utf-8") as f:
+        with open(file,"w",encoding="utf-8") as f:
             f.write(text)
 
-        print(f"수정 완료 : {file}")
+        print("수정:",file)
 
-print("전체 검사 완료")
+
+print("전체 완료")
