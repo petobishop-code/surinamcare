@@ -10,22 +10,45 @@ for file in root.glob("*.html"):
     if "-" not in name:
         continue
 
-    area = name.rsplit("-", 1)[0]
+    area = name.rsplit("-",1)[0]
 
-    html = file.read_text(encoding="utf-8", errors="ignore")
+    html = file.read_text(
+        encoding="utf-8",
+        errors="ignore"
+    )
 
-    # 잘못 들어간 성산구 링크 제거 → 현재 파일 지역으로 변경
-    html = html.replace("seongsan-sink.html", f"{area}-sink.html")
-    html = html.replace("seongsan-drain.html", f"{area}-drain.html")
-    html = html.replace("seongsan-toilet.html", f"{area}-toilet.html")
+    # 링크 주소 전체 변경
+    html = html.replace(
+        "seongsan-sink.html",
+        f"{area}-sink.html"
+    )
 
-    # canonical도 수정
+    html = html.replace(
+        "seongsan-drain.html",
+        f"{area}-drain.html"
+    )
+
+    html = html.replace(
+        "seongsan-toilet.html",
+        f"{area}-toilet.html"
+    )
+
+    # canonical
     html = re.sub(
-        r"https://(www\.)?surinamcare\.kr/seongsan-(sink|drain|toilet)\.html",
-        lambda m: f"https://www.surinamcare.kr/{area}-{m.group(2)}.html",
+        r"https://surinamcare\.kr/seongsan-[^\"']+\.html",
+        f"https://surinamcare.kr/{name}.html",
         html
     )
 
-    file.write_text(html, encoding="utf-8")
+    html = re.sub(
+        r"https://www\.surinamcare\.kr/seongsan-[^\"']+\.html",
+        f"https://www.surinamcare.kr/{name}.html",
+        html
+    )
 
-print("전체 링크 수정 완료")
+    file.write_text(
+        html,
+        encoding="utf-8"
+    )
+
+print("완료")
