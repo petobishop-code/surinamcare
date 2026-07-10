@@ -1,7 +1,9 @@
 import os
 import re
+import shutil
+from datetime import datetime
 
-print("수리남 전체 HTML 검사 시작")
+print("수리남 SEO 자동 검사 및 수정 시작")
 print("=" * 50)
 
 files = [f for f in os.listdir() if f.endswith(".html")]
@@ -9,10 +11,12 @@ files = [f for f in os.listdir() if f.endswith(".html")]
 html_files = set(files)
 
 print(f"HTML 파일 개수 : {len(files)}개")
-print("=" * 50)
 
-missing = []
+backup_folder = "seo_backup_" + datetime.now().strftime("%Y%m%d_%H%M%S")
+os.makedirs(backup_folder)
+
 fixed = []
+missing = []
 
 for file in files:
 
@@ -21,43 +25,104 @@ for file in files:
 
     original = data
 
-    # href 링크 검사
-    links = re.findall(r'href="([^"]+\.html)"', data)
 
-    for link in links:
+    # =====================
+    # title 검사
+    # =====================
 
-        # 외부 링크 제외
-        if link.startswith("http"):
-            continue
+    if not re.search(r"<title>.*?</title>", data, re.I):
 
-        # 존재하지 않는 파일
-        if link not in html_files:
+        name = file.replace(".html","")
 
-            missing.append(f"{file} → {link}")
+        title = name.replace("-", " ")
 
-            # 잘못된 링크 자동 보정
-            name = link.replace(".html", "")
-
-            if "-" in name:
-                parts = name.split("-")
-
-                if len(parts) == 2:
-
-                    area = parts[0]
-                    service = parts[1]
-
-                    possible = f"{area}-{service}.html"
-
-                    if possible in html_files:
-                        data = data.replace(link, possible)
+        data = data.replace(
+            "</head>",
+            f"<title>{title} | 수리남</title>\n</head>"
+        )
 
 
-    if original != data:
+    # =====================
+    # description 검사
+    # =====================
 
-        with open(file, "w", encoding="utf-8") as f:
+    if not re.search(
+        r'<meta name="description"',
+        data,
+        re.I
+    ):
+
+        description = (
+            "전국 하수구막힘, 변기막힘, 싱크대막힘 전문 수리남. "
+            "빠른 출동과 정확한 배관 점검으로 문제를 해결합니다."
+        )
+
+        data = data.replace(
+            "</head>",
+            f'<meta name="description" content="{description}">\n</head>'
+        )
+
+
+    # =====================
+    # canonical 검사
+    # =====================
+
+    if not re.search(
+        r'<link rel="canonical"',
+        data,
+        re.I
+    ):
+
+        url = "https://www.surinamcare.kr/" + file
+
+        data = data.replace(
+            "</head>",
+            f'<link rel="canonical" href="{url}">\n</head>'
+        )
+
+
+    # =====================
+    # 깨진 링크 검사
+    # =====================
+
+    
+  links = re.findall(
+    r'href="([^"]+\.html)"',
+    data
+)
+
+for link in links:
+
+    # https://www.surinamcare.kr/ 제거
+    clean_link = link.replace(
+        "https://www.surinamcare.kr/",
+        ""
+    )
+
+    if clean_link not in html_files:
+
+            missing.append(
+                f"{file} → {link}"
+            )
+
+
+    # 변경사항 저장
+    if original != data:links = re.findall(
+
+        shutil.copy(
+            file,
+            os.path.join(backup_folder,file)
+        )
+
+        with open(
+            file,
+            "w",
+            encoding="utf-8"
+        ) as f:
             f.write(data)
 
         fixed.append(file)
+
 
 
 print()
@@ -67,9 +132,10 @@ print("=" * 50)
 
 
 if missing:
-    print("발견된 문제 링크")
+    print("깨진 링크 발견")
     for m in missing:
-        print("❌", m)
+        print("❌",m)
+
 else:
     print("깨진 링크 없음")
 
@@ -79,8 +145,12 @@ print("자동 수정된 파일")
 print("=" * 50)
 
 for f in fixed:
-    print("✅", f)
+    print("✅",f)
 
+
+print()
+print("백업 위치:")
+print(backup_folder)
 
 print()
 print("전체 검사 완료")
