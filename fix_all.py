@@ -10,7 +10,7 @@ for file in root.glob("*.html"):
     filename = file.name
 
     # canonical 자동 수정
-    canonical = f'https://www.surinamcare.kr/{filename}'
+    canonical = f'https://surinamcare.kr/{filename}'
 
     if '<link rel="canonical"' in text:
         text = re.sub(
@@ -25,9 +25,9 @@ for file in root.glob("*.html"):
         )
 
     # 도메인 통일
-    text = text.replace("https://surinamcare.kr", "https://www.surinamcare.kr")
-    text = text.replace("https://petobishop-code.github.io/surinamcare", "https://www.surinamcare.kr")
-    text = text.replace("https://surinamcare.vercel.app", "https://www.surinamcare.kr")
+    text = text.replace("https://surinamcare.kr", "https://surinamcare.kr")
+    text = text.replace("https://petobishop-code.github.io/surinamcare", "https://surinamcare.kr")
+    text = text.replace("https://surinamcare.vercel.app", "https://surinamcare.kr")
 
     # 예전 템플릿 흔적 표시
     if "seongsan" in text.lower():

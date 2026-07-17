@@ -26,7 +26,7 @@ for file in root.glob("*.html"):
     # canonical 전체 강제 수정
     html = re.sub(
         r'<link rel="canonical" href="[^"]+">',
-        f'<link rel="canonical" href="https://www.surinamcare.kr/{filename}.html">',
+        f'<link rel="canonical" href="https://surinamcare.kr/{filename}.html">',
         html
     )
 

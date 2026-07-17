@@ -74,7 +74,7 @@ for file in files:
     # canonical 수정
     text = re.sub(
         r'https://www\.surinamcare\.kr/[^"]+',
-        "https://www.surinamcare.kr/anyang-drain.html",
+        "https://surinamcare.kr/anyang-drain.html",
         text
     )
 

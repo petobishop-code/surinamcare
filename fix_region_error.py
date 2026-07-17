@@ -35,7 +35,7 @@ for file in glob.glob("*.html"):
 
     html = re.sub(
         r'<link rel="canonical" href=".*?">',
-        f'<link rel="canonical" href="https://www.surinamcare.kr/{base}">',
+        f'<link rel="canonical" href="https://surinamcare.kr/{base}">',
         html
     )
 

@@ -73,7 +73,7 @@ for file in files:
         re.I
     ):
 
-        url = "https://www.surinamcare.kr/" + file
+        url = "https://surinamcare.kr/" + file
 
         data = data.replace(
             "</head>",
@@ -93,9 +93,9 @@ for file in files:
 
 for link in links:
 
-    # https://www.surinamcare.kr/ 제거
+    # https://surinamcare.kr/ 제거
     clean_link = link.replace(
-        "https://www.surinamcare.kr/",
+        "https://surinamcare.kr/",
         ""
     )
 

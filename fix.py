@@ -12,11 +12,11 @@ for file in folder.glob("*.html"):
     # www 추가
     text = text.replace(
         "https://surinamcare.kr",
-        "https://www.surinamcare.kr"
+        "https://surinamcare.kr"
     )
 
     # canonical 수정
-    canonical = f"https://www.surinamcare.kr/{file.name}"
+    canonical = f"https://surinamcare.kr/{file.name}"
 
     if '<link rel="canonical"' in text:
 
