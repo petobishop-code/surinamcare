@@ -1,13 +1,9 @@
-수리남케어 메인페이지 리뉴얼 파일
+수리남케어 전체 최적화 2단계 파일
 
-1. index.html과 assets 폴더를 저장소 최상단에 그대로 업로드하세요.
-2. 기존 index.html은 삭제하지 말고 먼저 index-old.html로 이름을 바꿔 백업하세요.
-3. 아래 지역 링크 파일명이 실제 저장소와 다르면 index.html에서 href만 현재 파일명으로 수정하세요.
-   - seongsan-drain.html
-   - uichang-drain.html
-   - jinhae-drain.html
-   - masan-drain.html
-   - gimhae-drain.html
-   - busan-drain.html
-4. 카카오톡 링크는 현재 임시 주소입니다. 실제 오픈채팅 또는 채널 URL로 교체하세요.
-5. 배포 후 네이버 서치어드바이저에서 메인페이지 수집 요청을 다시 진행하세요.
+생성 HTML: 204개
+대상 지역: 68개
+제외: 테스트 완료 12개(안양·창원·부평구·수성구), 강서구 마스터 3개
+자동검사 실패: 0개
+
+ZIP 안의 HTML 파일만 저장소 루트에 업로드하면 됩니다.
+page-map.csv와 seo-check-report.csv는 확인용이며 배포하지 않아도 됩니다.
