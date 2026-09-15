@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>오산싱크대막힘 | 배수 지연부터 고압세척 판단 기준</title>
+<meta content="오산싱크대막힘 증상을 배수 속도와 수위, 다른 배수구 반응을 기준으로 정리했습니다. 세교동, 금암동, 수청동, 궐동 등 오산 생활권에서 싱크대 배수 지연·역류가 반복될 때 확인할 원인, 점검 순서, 재발 관리 방법을 확인하세요." name="description"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<link href="https://surinamcare.kr/osan-sink.html" rel="canonical"/>
+<link href="/assets/logo.svg" rel="icon" type="image/svg+xml"/>
+<meta content="article" property="og:type"/>
+<meta content="ko_KR" property="og:locale"/>
+<meta content="수리남케어" property="og:site_name"/>
+<meta content="오산싱크대막힘 | 배수 지연부터 고압세척 판단 기준" property="og:title"/>
+<meta content="오산싱크대막힘 증상을 배수 속도와 수위, 다른 배수구 반응을 기준으로 정리했습니다. 세교동, 금암동, 수청동, 궐동 등 오산 생활권에서 싱크대 배수 지연·역류가 반복될 때 확인할 원인, 점검 순서, 재발 관리 방법을 확인하세요." property="og:description"/>
+<meta content="https://surinamcare.kr/osan-sink.html" property="og:url"/>
+<meta content="https://surinamcare.kr/sink-hero.webp" property="og:image"/>
+<meta content="오산싱크대막힘 배관 점검 안내 이미지" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://surinamcare.kr/sink-hero.webp" name="twitter:image"/>
+<style>
+    :root {
+      --primary:#0f766e;
+      --primary-dark:#115e59;
+      --primary-soft:#ecfdf5;
+      --accent:#f59e0b;
+      --text:#172033;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --bg:#f8fafc;
+      --white:#ffffff;
+      --danger:#b45309;
+      --shadow:0 14px 40px rgba(15,23,42,.09);
+      --radius:20px;
+    }
+
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.75;
+      word-break:keep-all;
+    }
+
+    a { color:inherit; text-decoration:none; }
+    img { max-width:100%; display:block; }
+    .container { width:min(1120px, calc(100% - 36px)); margin:0 auto; }
+
+    .topbar {
+      background:#0f172a;
+      color:#dbeafe;
+      font-size:13px;
+      text-align:center;
+      padding:8px 16px;
+    }
+
+    header {
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:rgba(255,255,255,.95);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .header-inner {
+      min-height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+
+    .logo {
+      font-size:23px;
+      font-weight:900;
+      letter-spacing:-1px;
+      color:var(--primary);
+      white-space:nowrap;
+    }
+
+    .logo span { color:#0f172a; }
+
+    nav {
+      display:flex;
+      align-items:center;
+      gap:24px;
+      font-size:14px;
+      font-weight:700;
+      color:#334155;
+    }
+
+    nav a:hover { color:var(--primary); }
+
+    .header-cta {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      padding:0 18px;
+      border-radius:999px;
+      background:var(--primary);
+      color:#fff;
+      font-weight:800;
+      font-size:14px;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at 85% 20%, rgba(16,185,129,.24), transparent 30%),
+        linear-gradient(135deg,#effcf8 0%,#f8fafc 58%,#eef6ff 100%);
+      border-bottom:1px solid var(--line);
+    }
+
+    .hero-inner {
+      padding:78px 0 72px;
+      display:grid;
+      grid-template-columns:1.25fr .75fr;
+      align-items:center;
+      gap:52px;
+    }
+
+    .eyebrow {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:#d1fae5;
+      color:var(--primary-dark);
+      font-size:13px;
+      font-weight:800;
+      margin-bottom:18px;
+    }
+
+    h1 {
+      font-size:clamp(36px,5vw,58px);
+      line-height:1.18;
+      letter-spacing:-2.5px;
+      margin-bottom:20px;
+    }
+
+    .hero p {
+      font-size:18px;
+      color:#475569;
+      max-width:700px;
+    }
+
+    .hero-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:28px;
+    }
+
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:50px;
+      padding:0 22px;
+      border-radius:12px;
+      font-weight:800;
+      border:1px solid transparent;
+    }
+
+    .btn-primary { background:var(--primary); color:#fff; }
+    .btn-light { background:#fff; border-color:#cbd5e1; color:#0f172a; }
+
+    .hero-card {
+      background:#fff;
+      border:1px solid rgba(15,118,110,.18);
+      box-shadow:var(--shadow);
+      border-radius:28px;
+      padding:28px;
+    }
+
+    .hero-card h2 {
+      font-size:21px;
+      margin-bottom:16px;
+      letter-spacing:-.5px;
+    }
+
+    .check-list { list-style:none; display:grid; gap:12px; }
+    .check-list li {
+      padding-left:30px;
+      position:relative;
+      color:#475569;
+      font-size:15px;
+    }
+    .check-list li::before {
+      content:"✓";
+      position:absolute;
+      left:0;
+      top:0;
+      width:22px;
+      height:22px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--primary-soft);
+      color:var(--primary);
+      font-weight:900;
+    }
+
+
+    .hero-photo {
+      margin:-4px -4px 20px;
+      border-radius:20px;
+      overflow:hidden;
+      background:#e2e8f0;
+      aspect-ratio:4/3;
+    }
+    .hero-photo img { width:100%; height:100%; object-fit:cover; }
+
+    .work-photo {
+      margin:26px 0 34px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow:0 10px 24px rgba(15,23,42,.06);
+    }
+    .work-photo img { width:100%; aspect-ratio:16/10; object-fit:cover; }
+    .work-photo figcaption {
+      padding:12px 16px;
+      color:#64748b;
+      font-size:14px;
+      border-top:1px solid var(--line);
+      background:#f8fafc;
+    }
+    .work-photo-grid {
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:16px;
+      margin:26px 0 34px;
+    }
+    .work-photo-grid .work-photo { margin:0; }
+    .work-photo-grid .work-photo img { aspect-ratio:4/3; }
+
+    .breadcrumb {
+      font-size:13px;
+      color:var(--muted);
+      padding:18px 0;
+    }
+    .breadcrumb a { color:var(--primary); }
+
+    .layout {
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 300px;
+      gap:34px;
+      align-items:start;
+      padding:10px 0 80px;
+    }
+
+    article {
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:44px;
+      box-shadow:0 8px 25px rgba(15,23,42,.04);
+    }
+
+    article h2 {
+      font-size:29px;
+      line-height:1.35;
+      letter-spacing:-1px;
+      margin:52px 0 18px;
+      padding-top:4px;
+    }
+
+    article h2:first-of-type { margin-top:10px; }
+    article h3 {
+      font-size:20px;
+      margin:30px 0 12px;
+      letter-spacing:-.4px;
+    }
+
+    article p { color:#374151; margin:0 0 18px; }
+
+    .lead {
+      font-size:18px;
+      line-height:1.9;
+      color:#334155;
+      border-left:4px solid var(--primary);
+      background:#f0fdfa;
+      padding:22px 24px;
+      border-radius:0 14px 14px 0;
+      margin-bottom:30px;
+    }
+
+    .toc {
+      background:#f8fafc;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:24px;
+      margin:28px 0 35px;
+    }
+
+    .toc strong { display:block; margin-bottom:10px; font-size:17px; }
+    .toc ol { padding-left:20px; color:#475569; }
+    .toc li { margin:7px 0; }
+    .toc a:hover { color:var(--primary); }
+
+    .info-grid {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+      margin:25px 0 12px;
+    }
+
+    .info-card {
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:22px;
+      background:#fff;
+    }
+
+    .info-card b {
+      display:block;
+      color:var(--primary-dark);
+      margin-bottom:7px;
+      font-size:17px;
+    }
+
+    .process {
+      display:grid;
+      gap:15px;
+      margin:24px 0;
+    }
+
+    .process-item {
+      display:grid;
+      grid-template-columns:48px 1fr;
+      gap:16px;
+      padding:21px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+    }
+
+    .step {
+      width:48px;
+      height:48px;
+      border-radius:15px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--primary);
+      color:#fff;
+      font-weight:900;
+      font-size:18px;
+    }
+
+    .process-item h3 { margin:0 0 5px; font-size:18px; }
+    .process-item p { margin:0; font-size:15px; color:#64748b; }
+
+    .case-box {
+      margin:26px 0;
+      padding:28px;
+      border-radius:18px;
+      background:linear-gradient(135deg,#fff7ed,#fffbeb);
+      border:1px solid #fed7aa;
+    }
+
+    .case-box h3 { margin:0 0 12px; color:#9a3412; }
+
+    .area-box {
+      background:#0f172a;
+      color:#e2e8f0;
+      border-radius:20px;
+      padding:28px;
+      margin:26px 0;
+    }
+
+    .area-box h3 { color:#fff; margin:0 0 12px; }
+    .area-tags { display:flex; flex-wrap:wrap; gap:9px; }
+    .area-tags span {
+      padding:7px 11px;
+      border-radius:999px;
+      background:rgba(255,255,255,.09);
+      border:1px solid rgba(255,255,255,.12);
+      font-size:13px;
+    }
+
+    .warning {
+      background:#fff7ed;
+      border:1px solid #fed7aa;
+      color:#9a3412;
+      padding:20px 22px;
+      border-radius:14px;
+      margin:24px 0;
+    }
+
+    .faq { display:grid; gap:12px; margin-top:22px; }
+    details {
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:#fff;
+      padding:0 20px;
+    }
+
+    summary {
+      cursor:pointer;
+      list-style:none;
+      padding:18px 30px 18px 0;
+      font-weight:800;
+      position:relative;
+    }
+
+    summary::-webkit-details-marker { display:none; }
+    summary::after {
+      content:"+";
+      position:absolute;
+      right:0;
+      top:16px;
+      color:var(--primary);
+      font-size:22px;
+    }
+    details[open] summary::after { content:"−"; }
+    details p { padding:0 0 18px; margin:0; color:#64748b; }
+
+    .related {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+      margin-top:25px;
+    }
+
+    .related a {
+      padding:22px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#f8fafc;
+      font-weight:800;
+    }
+
+    .related a span {
+      display:block;
+      font-size:13px;
+      color:var(--primary);
+      margin-bottom:5px;
+    }
+
+    aside {
+      position:sticky;
+      top:96px;
+      display:grid;
+      gap:18px;
+    }
+
+    .side-card {
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:24px;
+      box-shadow:0 8px 25px rgba(15,23,42,.04);
+    }
+
+    .side-card h2 {
+      font-size:19px;
+      margin-bottom:12px;
+      letter-spacing:-.4px;
+    }
+
+    .side-card p {
+      color:#64748b;
+      font-size:14px;
+      margin-bottom:16px;
+    }
+
+    .side-links { display:grid; gap:10px; }
+    .side-links a {
+      padding:12px 14px;
+      border-radius:10px;
+      background:#f8fafc;
+      font-size:14px;
+      font-weight:700;
+    }
+
+    .side-links a:hover { background:var(--primary-soft); color:var(--primary-dark); }
+
+    .cta-box {
+      background:linear-gradient(145deg,var(--primary-dark),#0f766e);
+      color:#fff;
+    }
+    .cta-box p { color:#d1fae5; }
+    .cta-box .btn {
+      width:100%;
+      background:#fff;
+      color:var(--primary-dark);
+    }
+
+    footer {
+      background:#0f172a;
+      color:#94a3b8;
+      padding:44px 0 90px;
+      font-size:13px;
+    }
+
+    .footer-inner {
+      display:flex;
+      justify-content:space-between;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    .footer-logo {
+      color:#fff;
+      font-size:20px;
+      font-weight:900;
+      margin-bottom:8px;
+    }
+
+    .notice {
+      max-width:650px;
+      line-height:1.8;
+    }
+
+    .mobile-bar {
+      display:none;
+      position:fixed;
+      left:0; right:0; bottom:0;
+      z-index:200;
+      background:#fff;
+      border-top:1px solid var(--line);
+      padding:10px 14px;
+      gap:10px;
+    }
+    .mobile-bar a {
+      flex:1;
+      min-height:46px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:11px;
+      font-weight:900;
+    }
+    .mobile-bar a:first-child { background:#f1f5f9; }
+    .mobile-bar a:last-child { background:var(--primary); color:#fff; }
+
+    @media (max-width: 920px) {
+      nav { display:none; }
+      .hero-inner { grid-template-columns:1fr; }
+      .hero-card { max-width:680px; }
+      .layout { grid-template-columns:1fr; }
+      aside { position:static; grid-template-columns:repeat(2,1fr); }
+    }
+
+    @media (max-width: 640px) {
+      .topbar { font-size:12px; }
+      .header-inner { min-height:64px; }
+      .header-cta { display:none; }
+      .hero-inner { padding:52px 0; gap:28px; }
+      .hero p { font-size:16px; }
+      article { padding:26px 20px; border-radius:16px; }
+      article h2 { font-size:24px; margin-top:42px; }
+      .info-grid, .related, aside { grid-template-columns:1fr; }
+      .process-item { grid-template-columns:42px 1fr; padding:17px; }
+      .step { width:42px; height:42px; }
+      .mobile-bar { display:flex; }
+      footer { padding-bottom:105px; }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://surinamcare.kr/#website",
+      "url": "https://surinamcare.kr/",
+      "name": "수리남케어",
+      "inLanguage": "ko-KR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://surinamcare.kr/osan-sink.html#webpage",
+      "url": "https://surinamcare.kr/osan-sink.html",
+      "name": "오산싱크대막힘 | 배수 지연부터 고압세척 판단 기준",
+      "description": "오산싱크대막힘 증상을 배수 속도와 수위, 다른 배수구 반응을 기준으로 정리했습니다. 세교동, 금암동, 수청동, 궐동 등 오산 생활권에서 싱크대 배수 지연·역류가 반복될 때 확인할 원인, 점검 순서, 재발 관리 방법을 확인하세요.",
+      "inLanguage": "ko-KR",
+      "isPartOf": {
+        "@id": "https://surinamcare.kr/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://surinamcare.kr/osan-sink.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://surinamcare.kr/osan-sink.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://surinamcare.kr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "오산싱크대막힘",
+          "item": "https://surinamcare.kr/osan-sink.html"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://surinamcare.kr/osan-sink.html#service",
+      "name": "오산싱크대막힘 배관 점검 안내",
+      "serviceType": "싱크대막힘",
+      "provider": {
+        "@type": "Organization",
+        "name": "수리남케어",
+        "url": "https://surinamcare.kr/"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "경기 오산시"
+      },
+      "url": "https://surinamcare.kr/osan-sink.html",
+      "description": "오산싱크대막힘 증상을 배수 속도와 수위, 다른 배수구 반응을 기준으로 정리했습니다. 세교동, 금암동, 수청동, 궐동 등 오산 생활권에서 싱크대 배수 지연·역류가 반복될 때 확인할 원인, 점검 순서, 재발 관리 방법을 확인하세요."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "오산에서 싱크대 물이 조금 느린 정도도 막힘 신호인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "평소보다 배수 시간이 길어졌다면 통로가 부분적으로 좁아지는 초기 단계일 수 있습니다. 세교동·금암동 등 어느 생활권이든 갑자기 속도가 달라졌다면 다른 배수구 반응과 함께 확인해보는 것이 좋습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "오산싱크대막힘이 반복되면 어디까지 확인해야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "같은 위치가 짧은 기간 안에 반복되면 가까운 구간만이 아니라 연결 배관에 오염이나 이물질이 남았는지 살펴볼 필요가 있습니다. 여러 공간이 동시에 느리다면 합류 지점이나 공용 라인까지 범위를 넓힙니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "싱크대 내시경이나 고압세척은 무조건 필요한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아닙니다. 증상과 막힘 위치에 따라 가까운 구간의 작업만으로 충분할 수 있습니다. 원인이 깊거나 벽면 오염이 넓게 남은 경우에 필요한 장비를 선택하는 것이 좋습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "오산에서 상담할 때 어떤 정보를 알려주면 좋나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "세교동, 금암동 같은 생활권과 건물 유형, 증상 시작 시점, 한 곳만 문제인지 다른 배수구도 같이 느린지, 최근 이물질 유입 가능성이 있는지를 알려주면 점검 범위를 정하는 데 도움이 됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "작업 후 바로 물이 내려가면 해결된 건가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "작업 직후 한 번의 배수만으로 판단하기보다 실제 사용량에 가까운 물을 여러 차례 흘려 속도·수위·소리·재역류 여부를 다시 확인하는 편이 좋습니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="topbar">오산 하수구·싱크대·변기 배수 문제 정보 안내</div>
+<header>
+<div class="container header-inner">
+<a class="logo" href="/">수리남<span>케어</span></a>
+<nav aria-label="주요 메뉴"><a href="/">홈</a><a href="/osan-drain.html">하수구막힘</a><a href="/osan-sink.html">싱크대막힘</a><a href="/osan-toilet.html">변기막힘</a></nav>
+<a class="header-cta" href="tel:01076011156">📞 010-7601-1156</a>
+</div>
+</header>
+<section class="hero">
+<div class="container hero-inner">
+<div>
+<div class="eyebrow">오산 싱크대 배수 점검 가이드</div>
+<h1>오산싱크대막힘<br/>기름 스케일 범위에 따라 필요한 작업이 달라집니다</h1>
+<p>오산싱크대막힘은 같은 증상처럼 보여도 막힌 위치와 원인이 다를 수 있습니다. 배수 속도·수위·소리·냄새와 다른 배수구의 반응을 함께 확인하면 필요한 작업 범위를 더 정확하게 좁힐 수 있습니다.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="tel:01076011156" style="font-size:22px; min-height:62px; padding:0 30px;">📞 010-7601-1156</a>
+</div>
+</div>
+<div class="hero-card" style="text-align:center;">
+<div class="hero-photo">
+<img alt="오산싱크대막힘 배관 점검 안내 이미지" fetchpriority="high" height="600" loading="eager" src="/sink-hero.webp" width="800"/>
+</div>
+<div style="font-size:15px; font-weight:800; color:#0f766e; margin-bottom:8px;">오산 싱크대 막힘 상담</div>
+<h2 style="font-size:30px; margin-bottom:8px;">24시간 전화상담</h2>
+<a href="tel:01076011156" style="display:block; font-size:32px; font-weight:900; color:#0f766e; margin:12px 0 18px;">010-7601-1156</a>
+<ul class="check-list" style="text-align:left; margin-bottom:20px;">
+<li>하수구막힘</li>
+<li>싱크대막힘</li>
+<li>변기막힘</li>
+<li>역류·악취·배수 지연</li>
+</ul>
+<a class="btn btn-primary" href="tel:01076011156" style="width:100%; font-size:19px;">📞 지금 전화하기</a>
+</div>
+</div>
+</section>
+<div aria-label="현재 위치" class="container breadcrumb"><a href="/">홈</a>  ›  오산싱크대막힘</div>
+<main class="container layout">
+<article><p class="lead"><strong>오산싱크대막힘</strong>을 확인할 때는 “한 곳만 느림”과 “여러 곳이 같이 느림”을 먼저 나누는 것이 좋습니다. 이 차이는 가까운 기구 문제인지, 여러 배수구가 만나는 연결 배관 문제인지 판단하는 데 가장 유용한 단서 중 하나입니다.</p>
+<div class="toc"><strong>단독·공용 배관 구분</strong><ol><li><a href="#single">한 곳만 느릴 때</a></li><li><a href="#multi">여러 곳이 느릴 때</a></li><li><a href="#cause">원인</a></li><li><a href="#test">배수 테스트</a></li><li><a href="#before">상담 전 체크</a></li><li><a href="#faq">FAQ</a></li></ol></div>
+<h2 id="single">1. 싱크대 한 곳만 느리다면 가까운 구간부터</h2><p>설거지 물이 싱크볼에 고였다가 한참 뒤에 빠집니다. 이런 증상이 한 기구에만 나타나고 다른 공간의 배수가 정상이라면 트랩, 호스, 변기 트랩, 배수구 입구처럼 가까운 위치부터 확인할 수 있습니다. 원인을 좁히지 않고 처음부터 공용 배관까지 작업 범위를 넓힐 필요는 없습니다.</p>
+<h2 id="multi">2. 다른 배수구도 함께 반응하면 연결 구간을 확인</h2><div class="info-grid"><div class="info-card"><b>동시 소리</b>배수할 때 거품이나 물이 배수구 쪽으로 다시 밀려 올라옵니다.</div><div class="info-card"><b>다른 공간</b>하부장이나 벽체 배관 연결부 주변에서 냄새가 반복됩니다.</div><div class="info-card"><b>악취·역류</b>물을 많이 흘리면 주방 바닥이나 인접 배수구에서 꾸르륵 반응이 나타납니다.</div><div class="info-card"><b>재발 신호</b>한 번 해결된 뒤 짧은 기간 안에 같은 증상이 다시 나타나는지 확인합니다.</div></div>
+<p>두 곳 이상이 함께 반응하면 서로 연결되는 합류 지점이나 그 이후의 배관이 좁아졌을 가능성을 함께 봅니다. 공동주택에서는 공용 라인 여부, 주택과 상가에서는 외부 배관 연결 상태까지 필요에 따라 범위를 넓힙니다.</p>
+<h2 id="cause">3. 오산싱크대막힘에서 자주 확인하는 원인</h2><ul class="check-list"><li>식용유·기름과 음식물 미세 찌꺼기가 굳어 배관 벽면에 스케일을 만든 경우</li><li>주름호스와 트랩 안쪽에 찌꺼기가 오래 누적된 경우</li><li>벽체 배관의 굴곡부에 전분·세제 찌꺼기와 기름이 겹쳐 붙은 경우</li><li>여러 주방 배관이 합류하는 공용 라인이 좁아져 배수가 밀리는 경우</li></ul><figure class="work-photo"><img alt="오산싱크대막힘 배수 점검 안내" decoding="async" height="750" loading="lazy" src="/sink-cctv.webp" width="1200"/><figcaption>다른 배수구의 동시 반응은 공통 배관을 확인해야 하는 중요한 단서입니다.</figcaption></figure>
+<h2 id="test">4. 물을 조금 쓸 때와 많이 쓸 때를 비교하세요</h2><p>부분 막힘은 소량의 물에서는 정상처럼 보이지만 사용량이 늘면 배관 안에 물이 차면서 갑자기 느려지거나 역류할 수 있습니다. 현장에서 배수 테스트를 할 때도 한 번만 확인하지 않고 물의 양을 달리해 반응을 비교하는 이유입니다.</p><p>싱크볼 바로 아래의 호스와 트랩, 벽체 연결부를 먼저 나눠 확인합니다. 가까운 구간이 정상인데 많은 물에서만 역류하거나 짧은 기간 안에 재발한다면 더 깊은 주방 배관 상태를 확인해야 합니다. 기름 스케일이 넓게 붙은 경우에는 단순 관통보다 세척 범위를 넓혀야 재발 가능성을 줄이는 데 도움이 됩니다.</p><div class="warning">끓는 물이나 강한 약품만 반복해서 사용하는 방식은 배관 재질과 연결부에 부담을 줄 수 있고, 굳은 기름 스케일을 충분히 제거하지 못한 채 통로만 잠시 열 수 있습니다.</div>
+<h2 id="before">5. 상담 전에 체크하면 좋은 네 가지</h2><ul class="check-list"><li>세교동·금암동 등 현재 생활권과 건물 유형</li><li>증상이 시작된 날짜와 처음 문제가 생긴 공간</li><li>물을 많이 쓸 때만 심해지는지 여부</li><li>다른 배수구의 수위·소리·냄새 변화 여부</li></ul>
+<h2>6. 오산 생활권 특성</h2><p>세교·금암·수청의 공동주택과 궐·원·오산동의 상가·주택이 섞여 있어, 배수 사용량이 늘 때만 생기는 부분 막힘인지 상시 막힘인지 구분하면 점검 방향을 잡기 쉽습니다.</p><div class="area-box"><h3>주요 생활권</h3><div class="area-tags"><span>세교동</span><span>금암동</span><span>수청동</span><span>궐동</span><span>원동</span><span>오산동</span><span>부산동</span><span>갈곶동</span></div></div>
+<h2>추가 체크. 오산에서 재발 가능성을 줄이는 확인법</h2>
+<p>세교·금암·수청의 공동주택과 궐·원·오산동의 상가·주택이 섞여 있어, 배수 사용량이 늘 때만 생기는 부분 막힘인지 상시 막힘인지 구분하면 점검 방향을 잡기 쉽습니다. 특히 같은 증상이 반복될 때는 최근 몇 주 안에 비슷한 문제가 있었는지, 물을 적게 사용할 때는 괜찮지만 많은 양을 흘릴 때만 느려지는지, 다른 공간에서도 기포나 소리가 나는지를 함께 기록해두면 좋습니다. 이런 정보는 단순 막힘과 깊은 배관 정체를 구분하는 데 도움이 됩니다.</p>
+<p>싱크대는 기름과 음식물 찌꺼기가 반복적으로 유입되는 공간이라 “한 번 내려갔다”보다 충분한 통로가 확보됐는지 확인하는 과정이 중요합니다. 막힘을 해결한 뒤에는 실제 사용 환경과 비슷하게 물을 여러 차례 흘려보고, 이전에 나타났던 냄새나 소리, 수위 변화가 다시 생기는지 확인해야 합니다. 단순히 물길이 잠깐 열린 상태라면 며칠 뒤 다시 느려질 수 있으므로 원인이 남아 있는지 확인하는 과정이 중요합니다.</p>
+<div class="case-box"><h3>오산 상담 전에 메모하면 좋은 내용</h3><p>① 처음 느려진 공간 ② 증상이 시작된 시점 ③ 물을 많이 쓸 때 달라지는 반응 ④ 다른 배수구의 동시 증상 ⑤ 최근 이물질 유입 가능성. 이 다섯 가지를 미리 정리해두면 현장에서 확인할 우선순위를 빠르게 잡는 데 도움이 됩니다.</p></div>
+<h2>추가 안내. 오산 건물 유형에 따라 확인 순서가 달라지는 이유</h2>
+<p>세교동·금암동처럼 공동주택 비중이 높은 생활권에서는 한 세대의 싱크대만 느린지, 같은 집 안의 다른 배수구도 함께 반응하는지 먼저 구분하는 것이 좋습니다. 한 공간에서만 증상이 나타나면 가까운 기구나 연결부를 우선 확인할 수 있지만, 욕실·주방·세탁실처럼 서로 다른 공간이 비슷한 시기에 느려지면 물이 합류하는 배관 쪽을 함께 살펴볼 필요가 있습니다. 관리실이나 인접 세대에서도 비슷한 증상이 있는지 확인할 수 있다면 공용 라인 가능성을 판단하는 데 추가 단서가 됩니다.</p>
+<p>빌라·다세대나 오래된 주택에서는 배관 굴곡과 연결 방식이 건물마다 다를 수 있어 건물 연식만으로 원인을 단정하기 어렵습니다. 반대로 비교적 새 건물이라고 해서 막힘 가능성이 없는 것도 아닙니다. 공사 잔재, 생활 이물질, 기름성 오염처럼 사용 과정에서 생긴 문제는 건물 나이와 관계없이 나타날 수 있습니다. 그래서 오산싱크대막힘 상담에서는 “몇 년 된 건물인지”와 함께 “언제부터, 어느 공간에서, 어떤 물 사용 뒤에 증상이 커졌는지”를 같이 확인하는 것이 더 실용적입니다.</p>
+<p>상가에서는 사용량이 많은 시간대가 중요한 기준이 됩니다. 평소에는 괜찮다가 영업 중 많은 물을 한꺼번에 사용할 때만 느려진다면 배관 통로가 완전히 막힌 것이 아니라 일부 좁아진 상태일 수도 있습니다. 이런 부분 막힘은 소량 테스트에서는 정상처럼 보일 수 있으므로 실제 사용량에 가까운 조건에서 재현해 보는 과정이 필요합니다. 수청동를 포함한 오산 생활권에서도 건물 용도와 사용 패턴을 함께 설명하면 점검 범위를 정하는 데 도움이 됩니다.</p>
+<h2>추가 안내. 작업 후 확인해야 할 배수 테스트 기준</h2>
+<p>막힘 작업 뒤 가장 중요한 것은 “한 번 내려갔다”는 사실보다 같은 증상이 다시 나타나지 않는지 확인하는 것입니다. 먼저 적은 양의 물로 기본 흐름을 보고, 이상이 없다면 실제 생활에서 사용하는 양에 가깝게 물을 늘려봅니다. 이때 수위가 다시 오르는지, 배수 속도가 일정한지, 다른 배수구에서 꾸르륵 소리나 기포가 생기는지, 연결부 주변에 물기가 생기는지 차례로 확인합니다. 처음 문제였던 증상이 재현되지 않아야 작업 범위가 적절했는지 판단하기 쉽습니다.</p>
+<p>싱크대 문제는 원인에 따라 관리 방법도 달라집니다. 이물질이 직접 들어간 경우라면 재유입을 줄이는 것이 핵심이고, 배관 벽면에 오염이 누적된 경우라면 배수 속도의 변화를 조기에 알아차리는 것이 중요합니다. 같은 위치가 자주 막히는데 매번 임시로 통로만 열었다면 더 깊은 구간을 확인해야 할 수도 있습니다. 반대로 단순한 가까운 이물질이 원인이라면 불필요하게 큰 작업을 할 이유는 없습니다. 결국 증상, 위치, 반복 주기를 함께 보고 필요한 만큼만 점검하는 것이 가장 합리적입니다.</p>
+<h2 id="faq">7. 오산싱크대막힘 자주 묻는 질문</h2><div class="faq"><details><summary>오산에서 싱크대 물이 조금 느린 정도도 막힘 신호인가요?</summary><p>평소보다 배수 시간이 길어졌다면 통로가 부분적으로 좁아지는 초기 단계일 수 있습니다. 세교동·금암동 등 어느 생활권이든 갑자기 속도가 달라졌다면 다른 배수구 반응과 함께 확인해보는 것이 좋습니다.</p></details><details><summary>오산싱크대막힘이 반복되면 어디까지 확인해야 하나요?</summary><p>같은 위치가 짧은 기간 안에 반복되면 가까운 구간만이 아니라 연결 배관에 오염이나 이물질이 남았는지 살펴볼 필요가 있습니다. 여러 공간이 동시에 느리다면 합류 지점이나 공용 라인까지 범위를 넓힙니다.</p></details><details><summary>싱크대 내시경이나 고압세척은 무조건 필요한가요?</summary><p>아닙니다. 증상과 막힘 위치에 따라 가까운 구간의 작업만으로 충분할 수 있습니다. 원인이 깊거나 벽면 오염이 넓게 남은 경우에 필요한 장비를 선택하는 것이 좋습니다.</p></details><details><summary>오산에서 상담할 때 어떤 정보를 알려주면 좋나요?</summary><p>세교동, 금암동 같은 생활권과 건물 유형, 증상 시작 시점, 한 곳만 문제인지 다른 배수구도 같이 느린지, 최근 이물질 유입 가능성이 있는지를 알려주면 점검 범위를 정하는 데 도움이 됩니다.</p></details><details><summary>작업 후 바로 물이 내려가면 해결된 건가요?</summary><p>작업 직후 한 번의 배수만으로 판단하기보다 실제 사용량에 가까운 물을 여러 차례 흘려 속도·수위·소리·재역류 여부를 다시 확인하는 편이 좋습니다.</p></details></div><h2>8. 오산 관련 막힘 정보</h2><div class="related"><a href="/osan-drain.html"><span>관련 페이지</span>오산하수구막힘 →</a><a href="/osan-toilet.html"><span>관련 페이지</span>오산변기막힘 →</a></div></article>
+<aside>
+<div class="side-card">
+<h2>오산 배수 문제 바로가기</h2>
+<p>한 공간의 증상만 보지 말고 연결된 배수 문제도 함께 확인하세요.</p>
+<div class="side-links">
+<a href="/osan-drain.html">오산하수구막힘</a>
+<a href="/osan-sink.html">오산싱크대막힘</a>
+<a href="/osan-toilet.html">오산변기막힘</a>
+</div>
+</div>
+<div class="side-card">
+<h2>상담 전 체크하면 좋은 정보</h2>
+<ul class="check-list"><li>증상 시작 시점</li><li>물이 느려지는 위치</li><li>다른 배수구 동시 반응</li><li>이물질 유입 가능성</li></ul>
+</div>
+<div class="side-card cta-box" id="consult">
+<h2>24시간 전화상담</h2>
+<a href="tel:01076011156" style="display:block; font-size:26px; font-weight:900; color:#ffffff; margin:10px 0 14px;">010-7601-1156</a>
+<p>하수구·싱크대·변기 막힘과 역류, 악취 증상을 바로 상담하세요.</p>
+<a class="btn" href="tel:01076011156">📞 전화걸기</a>
+</div>
+</aside>
+</main>
+<footer>
+<div class="container footer-inner">
+<div><div class="footer-logo">수리남케어</div>오산 하수구·싱크대·변기 배수 문제 정보</div>
+<div class="notice">본 페이지는 싱크대 막힘의 일반적인 원인과 점검 방법을 안내하기 위한 정보 콘텐츠입니다. 실제 현장의 배관 구조와 오염 상태에 따라 필요한 점검 및 작업 방법은 달라질 수 있습니다.</div>
+</div>
+</footer>
+<div class="mobile-bar">
+<a href="tel:01076011156" style="flex:1; background:var(--primary); color:#fff; font-size:18px;">📞 010-7601-1156 전화걸기</a>
+</div>
+</body>
+</html>
