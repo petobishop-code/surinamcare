@@ -1,34 +1,34 @@
-수리남케어 4차 지역 하수구막힘 통합완성본 — 강원·경남·전남·전북 20개
+수리남케어 5차 지역 하수구막힘 통합완성본 — 경기·강원·충청·경북·전남 30개
 
-이번 ZIP에는 사이트에 적용할 23개 파일이 모두 있습니다.
-- 4차 신규 *-drain.html 20개
-- sitemap.xml 전체본 (3차 513개 URL + 이번 20개 URL = 총 533개)
-- region-pages.html (지역명 한글 표시 20개 신규 추가, 기존 디자인 유지)
+이번 ZIP에는 사이트에 적용할 33개 파일이 모두 있습니다.
+- 5차 신규 *-drain.html 30개
+- sitemap.xml 전체본 (4차 533개 URL + 이번 30개 URL = 총 563개)
+- region-pages.html (지역명 한글 표시 30개 신규 추가, 기존 디자인 유지)
 - 적용방법.txt
 
 사용 방법 (XML 코드 별도 복사/붙여넣기 필요 없음)
 1. ZIP 압축을 풉니다.
-2. 파일 23개를 수리남케어 프로젝트 기존 index.html, sitemap.xml이 있는 폴더에 복사합니다.
-3. sitemap.xml과 region-pages.html은 덮어쓰고, 신규 지역 HTML 20개는 추가합니다.
+2. 파일 33개를 수리남케어 프로젝트 기존 index.html, sitemap.xml이 있는 폴더에 복사합니다.
+3. sitemap.xml과 region-pages.html은 덮어쓰고, 신규 지역 HTML 30개는 추가합니다.
 4. 기존 다른 HTML 파일, index.html, 이미지, 로고 파일은 삭제하지 마세요.
 5. GitHub Desktop에서 Changes 확인 후 Commit to main → Push origin 합니다.
 6. Vercel 배포 완료 후 다음 주소를 직접 확인합니다.
    https://surinamcare.kr/sitemap.xml
    https://surinamcare.kr/region-pages.html
-   https://surinamcare.kr/gangneung-drain.html
-   https://surinamcare.kr/tongyeong-drain.html
-   https://surinamcare.kr/jeongeup-drain.html
+   https://surinamcare.kr/yangpyeong-drain.html
+   https://surinamcare.kr/gimcheon-drain.html
+   https://surinamcare.kr/boseong-drain.html
 
 작업 내역
-- 3차 전달 ZIP 속 sitemap.xml의 URL 513개 모두 보존
-- 4차 추가 URL 20개는 3차 기준 URL과 중복 없음
-- 최종 사이트맵 URL 533개, 중복 0개, XML 문법 확인
+- 4차 전달 ZIP 속 sitemap.xml의 URL 533개 모두 보존
+- 5차 추가 URL 30개는 4차 기준 URL과 중복 없음
+- 최종 사이트맵 URL 563개, 중복 0개, XML 문법 확인
 - 지역목록 기존 레이아웃/JS 기능 그대로, 신규 지역 표시명만 한글 매핑 추가
 - 신규 페이지는 기존 /drain-hero.webp 와 /drain-before.webp 이미지 경로를 참조
 
 주의
 - 현재 실제 GitHub 저장소 및 라이브 사이트 상태와 직접 대조하지 못했습니다.
-- 3차 통합본을 이미 반영했고 그 이후 다른 sitemap/region-pages 변경이 없다는 전제의 교체용 파일입니다.
+- 4차 통합본을 이미 반영했고 그 이후 다른 sitemap/region-pages 변경이 없다는 전제의 교체용 파일입니다.
 - 그 사이 추가 수정이 있었다면 sitemap.xml, region-pages.html은 그대로 덮어쓰지 말고 변경사항을 병합해야 합니다.
-- 이번 ZIP은 4차 하수구막힘 신규 지역 20개이며 신규 싱크대/변기/세면대 페이지는 없습니다.
+- 이번 ZIP은 5차 하수구막힘 신규 지역 30개이며 신규 싱크대/변기/세면대 페이지는 없습니다.
 - 새 페이지가 검색에 노출되는 것은 검색엔진 색인에 달려 있으며 즉시 노출을 보장하지 않습니다.
