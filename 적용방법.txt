@@ -1,58 +1,34 @@
-수리남케어 3차 통합 완성본 — 3차 신규 하수구막힘 20개
+수리남케어 4차 지역 하수구막힘 통합완성본 — 강원·경남·전남·전북 20개
 
-이번 ZIP만 압축 해제해서 파일 23개를 기존 수리남케어 사이트 최상위 폴더에 넣으세요.
-(기존 index.html과 sitemap.xml이 있는 폴더입니다.)
+이번 ZIP에는 사이트에 적용할 23개 파일이 모두 있습니다.
+- 4차 신규 *-drain.html 20개
+- sitemap.xml 전체본 (3차 513개 URL + 이번 20개 URL = 총 533개)
+- region-pages.html (지역명 한글 표시 20개 신규 추가, 기존 디자인 유지)
+- 적용방법.txt
 
-1. ZIP 압축 해제
-2. 신규 *-drain.html 20개는 추가, sitemap.xml과 region-pages.html은 덮어쓰기
-3. 기존에 있던 다른 HTML과 이미지, 로고 파일은 삭제하지 않기
-4. GitHub Desktop에서 Changes 확인 -> Commit -> Push origin
-5. Vercel 배포가 완료되면 아래 주소를 열어서 확인하기
-   https://surinamcare.kr/region-pages.html
+사용 방법 (XML 코드 별도 복사/붙여넣기 필요 없음)
+1. ZIP 압축을 풉니다.
+2. 파일 23개를 수리남케어 프로젝트 기존 index.html, sitemap.xml이 있는 폴더에 복사합니다.
+3. sitemap.xml과 region-pages.html은 덮어쓰고, 신규 지역 HTML 20개는 추가합니다.
+4. 기존 다른 HTML 파일, index.html, 이미지, 로고 파일은 삭제하지 마세요.
+5. GitHub Desktop에서 Changes 확인 후 Commit to main → Push origin 합니다.
+6. Vercel 배포 완료 후 다음 주소를 직접 확인합니다.
    https://surinamcare.kr/sitemap.xml
-   https://surinamcare.kr/asan-drain.html
-   https://surinamcare.kr/hongseong-drain.html
-   https://surinamcare.kr/andong-drain.html
+   https://surinamcare.kr/region-pages.html
+   https://surinamcare.kr/gangneung-drain.html
+   https://surinamcare.kr/tongyeong-drain.html
+   https://surinamcare.kr/jeongeup-drain.html
 
-포함 파일
-- 신규 HTML 20개 (충청 12개 / 전라 5개 / 경북 3개)
-- sitemap.xml : 기존 2차 전체본 493개 + 신규 20개 = 총 513개 고유 URL
-- region-pages.html : 기존 디자인/버튼/링크 유지, 신규 20개 한글 이름만 등록
-- 적용방법.txt : 이 파일
+작업 내역
+- 3차 전달 ZIP 속 sitemap.xml의 URL 513개 모두 보존
+- 4차 추가 URL 20개는 3차 기준 URL과 중복 없음
+- 최종 사이트맵 URL 533개, 중복 0개, XML 문법 확인
+- 지역목록 기존 레이아웃/JS 기능 그대로, 신규 지역 표시명만 한글 매핑 추가
+- 신규 페이지는 기존 /drain-hero.webp 와 /drain-before.webp 이미지 경로를 참조
 
-중복 검사 기준
-- 바로 이전에 전달한 2차 통합 완성본의 sitemap.xml 493개 기준
-- 이전 후보 중 천안/구미 하수구막힘 페이지는 기존 등록 URL과 중복되어 제외
-- 대신 홍성/보령 하수구막힘을 선정하여 신규 20개로 구성
-- 새 URL 20개와 기존 URL의 중복: 0개. 최종 sitemap.xml 중복: 0개
-
-지역별 신규 페이지 목록
-- 안동하수구막힘: andong-drain.html
-- 아산하수구막힘: asan-drain.html
-- 보령하수구막힘: boryeong-drain.html
-- 충주하수구막힘: chungju-drain.html
-- 당진하수구막힘: dangjin-drain.html
-- 음성하수구막힘: eumseong-drain.html
-- 공주하수구막힘: gongju-drain.html
-- 군산하수구막힘: gunsan-drain.html
-- 경주하수구막힘: gyeongju-drain.html
-- 경산하수구막힘: gyeongsan-drain.html
-- 계룡하수구막힘: gyeryong-drain.html
-- 홍성하수구막힘: hongseong-drain.html
-- 익산하수구막힘: iksan-drain.html
-- 제천하수구막힘: jecheon-drain.html
-- 진천하수구막힘: jincheon-drain.html
-- 목포하수구막힘: mokpo-drain.html
-- 논산하수구막힘: nonsan-drain.html
-- 서산하수구막힘: seosan-drain.html
-- 순천하수구막힘: suncheon-drain.html
-- 여수하수구막힘: yeosu-drain.html
-
-알아둘 점
-- 사용자가 실제로 배포한 라이브 파일은 외부 확인에 제한이 있으므로, 마지막 2차 통합본을 최신 기준으로 가정한 결과입니다.
-  2차 이후 사이트맵이나 지역 목록을 직접 수정한 적이 있다면 덮어쓰기 전에 별도 병합이 필요합니다.
-- 별도 XML 코드 붙여넣기는 불필요합니다. 전체 sitemap.xml을 완성해 넣었습니다.
-- 신규 HTML은 기존 /drain-hero.webp, /drain-before.webp, /assets/logo.svg를 재사용합니다.
-- 이미지 파일과 index.html은 변경하지 않았습니다.
-- 네이버 검색 결과 노출은 파일 배포만으로 보장되지 않으며 색인에는 시간이 걸릴 수 있습니다.
-- 같은 지역의 싱크대/변기/세면대 막힘 신규 HTML은 포함하지 않습니다.
+주의
+- 현재 실제 GitHub 저장소 및 라이브 사이트 상태와 직접 대조하지 못했습니다.
+- 3차 통합본을 이미 반영했고 그 이후 다른 sitemap/region-pages 변경이 없다는 전제의 교체용 파일입니다.
+- 그 사이 추가 수정이 있었다면 sitemap.xml, region-pages.html은 그대로 덮어쓰지 말고 변경사항을 병합해야 합니다.
+- 이번 ZIP은 4차 하수구막힘 신규 지역 20개이며 신규 싱크대/변기/세면대 페이지는 없습니다.
+- 새 페이지가 검색에 노출되는 것은 검색엔진 색인에 달려 있으며 즉시 노출을 보장하지 않습니다.
